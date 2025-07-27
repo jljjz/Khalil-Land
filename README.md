@@ -1,14 +1,16 @@
-# khalil-land-wi-ki
+# Khalil Land Wiki
+欢迎大家一起协助完善服务器的WiKi
 
-The Site is generated using [vuepress](https://vuepress.vuejs.org/) and [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
+## 安装
 
-## Install
-
+1.将项目克隆到本地
+2.进入对应目录
+3.安装依赖
 ```sh
 npm i
 ```
 
-## Usage
+## 使用
 
 ```sh
 # start dev server
@@ -21,7 +23,7 @@ npm run docs:preview
 npm run vp-update
 ```
 
-## Documents
+## 文档
 
 - [vuepress](https://vuepress.vuejs.org/)
 - [vuepress-theme-plume](https://theme-plume.vuejs.press/)
