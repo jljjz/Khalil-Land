@@ -29,24 +29,27 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    // hostname: 'https://your_site_url',
+    hostname: 'https://wiki.zipawa.top',
 
     /* 文档仓库配置，用于 editLink */
-    // docsRepo: '',
-    // docsDir: 'docs',
+    docsRepo: 'https://github.com/Ziphyrien/Khalil-Land',
+    docsDir: 'docs',
     // docsBranch: '',
 
     /* 页内信息 */
     // editLink: true,
     // lastUpdated: true,
     // contributors: true,
+    contributors: {
+      mode: 'block',
+    },      
     // changelog: false,
 
     /**
      * 博客
      * @see https://theme-plume.vuejs.press/config/basic/#blog
      */
-    // blog: false, // 禁用博客
+    blog: false, // 禁用博客
     // blog: {
     //   postList: true, // 是否启用文章列表页
     //   tags: true, // 是否启用标签页
