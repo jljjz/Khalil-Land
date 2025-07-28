@@ -48,14 +48,14 @@ export default defineThemeConfig({
   /**
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
-  profile: {
-    avatar: 'https://theme-plume.vuejs.press/plume.png',
-    name: 'Khalil Land WiKi',
-    description: 'Minecraft服务器Khalil Land（知己屿）的WiKi，欢迎大家共同编辑！',
+  // profile: {
+    // avatar: 'https://theme-plume.vuejs.press/plume.png',
+    // name: 'Khalil Land WiKi',
+    // description: 'Minecraft服务器Khalil Land（知己屿）的WiKi，欢迎大家共同编辑！',
     // circle: true,
     // location: '',
     // organization: '',
-  },
+  // },
 
   navbar,
   notes,

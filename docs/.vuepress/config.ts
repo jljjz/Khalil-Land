@@ -17,7 +17,7 @@ export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
   title: 'Khalil Land WiKi',
-  description: 'Minecraft服务器Khalil Land（知己屿）的WiKi，欢迎大家共同编辑！',
+  description: 'Minecraft服务器Khalil Land（知己屿）的WiKi',
 
   head: [
     // 配置站点图标
