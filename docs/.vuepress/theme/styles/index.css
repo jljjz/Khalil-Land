@@ -1,0 +1,115 @@
+/* --- 字体导入 --- */
+@import url("https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Regular/result.css");
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code@4.2.1/index.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@1,1..1000&display=swap');
+
+/* --- 全局字体变量与基础设置 --- */
+:root {
+    --vp-font-family-base: "LXGW Bright", sans-serif;
+    --vp-font-family-mono: "Cascadia code";
+    --vp-custom-block-font-size: 17px;
+    font-optical-sizing: auto;
+}
+
+:root:where(:lang(zh)),
+:root:where(:lang(zh-CN)) {
+    --vp-font-family-base: "LXGW Bright", sans-serif;
+}
+
+html {
+    font-size: 19px;
+    font-weight: 450;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+/* --- 特定组件字体配置 --- */
+
+/* 代码块字体 */
+.vp-doc div[class*="language-"] pre, 
+.vp-doc div[class*="language-"] code {
+    font-weight: 350;
+    font-variant-ligatures: normal;
+}
+
+/* 引用块 */
+.vp-doc blockquote > p:not(.katex) {
+    font-size: 1em;
+}
+
+/* 使用 Ysabeau 字体的元素 */
+.tag-name,
+.blog-post-item-content .post-meta .tag-list,
+.blog-post-item-content .post-meta a,
+.vp-category-group .folder,
+.vp-doc-meta .tag,
+.vp-footer,
+.profile-info {
+    font-family: "Ysabeau";
+}
+
+/* 导航栏 */
+.vp-navbar-title .vp-link.no-icon.link.title {
+    font-size: 15pt !important;
+    font-weight: 400;
+}
+
+.vp-link.link.navbar-menu-link {
+    font-size: 13pt !important;
+}
+
+.vp-flyout.vp-navbar-menu-group .button.button span.text {
+    font-size: 13pt !important;
+}
+
+/* 搜索框 */
+.search-input {
+    font-family: var(--vp-font-family-base);
+    font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+/* --- Twikoo 评论区相关字体 --- */
+
+.tk-comments-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.tk-comment {
+    font-size: inherit;
+    line-height: 1.75 !important;
+}
+
+.tk-nick {
+    font-size: 1rem !important;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.tk-time {
+    font-size: 0.8rem;
+}
+
+.tk-replies .tk-content span:first-child:not(.token) {
+    font-size: .75rem;
+}
+
+.tk-tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .tk-comment {
+        font-size: 0.875rem !important;
+    }
+    .tk-nick {
+        font-size: 0.875rem !important;
+    }
+    .tk-tag {
+        font-size: 0.75rem;
+    }
+}
