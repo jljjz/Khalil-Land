@@ -3,7 +3,9 @@ on:
   schedule:
     # Set the schedule time
     - cron: '0 2 * * *'
-
+  # 手动触发部署
+  workflow_dispatch:
+  
 jobs:
   check-and-submit:
     runs-on: ubuntu-latest
