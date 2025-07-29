@@ -92,7 +92,6 @@ export default defineUserConfig({
       appId: 'S5QXFER1OM',
       apiKey: 'e40b21fec07c0ea34260b51860cd1e5d',
       indexName: 'Khalil Land 知己屿 WiKi',
-      askAi: '5Tkzo3j6m6Il',
     },
 
     /**
