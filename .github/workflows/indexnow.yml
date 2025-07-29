@@ -13,5 +13,6 @@ jobs:
       - name: indexnow-action
         uses: bojieyang/indexnow-action@v2
         with:
+          failure-strategy: error
           sitemap-location: 'https://wiki.zipawa.top/sitemap.xml'
           key: ${{ secrets.INDEXNOW_KEY }}
