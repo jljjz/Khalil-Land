@@ -80,19 +80,19 @@ export default defineUserConfig({
     // },
 
     /* 本地搜索, 默认启用 */
-    search: { provider: 'local' },
+    //  search: { provider: 'local' },
 
     /**
      * Algolia DocSearch
      * 启用此搜索需要将 本地搜索 search 设置为 false
      * @see https://theme-plume.vuejs.press/config/plugins/search/#algolia-docsearch
      */
-    // search: {
-    //   provider: 'algolia',
-    //   appId: '',
-    //   apiKey: '',
-    //   indexName: '',
-    // },
+    search: {
+      provider: 'algolia',
+      appId: 'S5QXFER1OM',
+      apiKey: 'e40b21fec07c0ea34260b51860cd1e5d',
+      indexName: 'Khalil Land 知己屿 WiKi',
+    },
 
     /**
      * Shiki 代码高亮
