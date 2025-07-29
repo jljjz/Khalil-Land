@@ -1,4 +1,4 @@
-# Khalil Land Wiki
+# Khalil Land WiKi
 欢迎大家一起协助完善服务器的WiKi
 
 ## 安装
