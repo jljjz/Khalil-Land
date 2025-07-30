@@ -44,7 +44,7 @@ export default defineUserConfig({
     contributors: {
       mode: 'block',
     },      
-    // changelog: false,
+    changelog: true,
 
     /**
      * 博客
