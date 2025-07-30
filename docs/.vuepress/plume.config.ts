@@ -25,7 +25,7 @@ export default defineThemeConfig({
   social: [
     { icon: 'qq', link: 'https://qm.qq.com/q/h8w9EjixS8' },
   ],
-  // navbarSocialInclude: ['github'], // 允许显示在导航栏的 social 社交链接
+  navbarSocialInclude: ['qq'], // 允许显示在导航栏的 social 社交链接
   // aside: true, // 页内侧边栏， 默认显示在右侧
   // outline: [2, 3], // 页内大纲， 默认显示 h2, h3
 
@@ -40,10 +40,10 @@ export default defineThemeConfig({
   // createTime: true, // 是否显示文章创建时间
 
   /* 站点页脚 */
-  // footer: {
-  //   message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
-  //   copyright: '',
-  // },
+  footer: {
+    message: 'Copyright © 2025-present <a target="_blank" href="https://space.bilibili.com/517481506?spm_id_from=333.1007.0.0"><b>Ziphyrien</b></a>,All Rights Reserved.',
+    copyright: 'CC BY-NC-SA 4.0',
+  },
 
   /**
    * @see https://theme-plume.vuejs.press/config/basic/#profile
