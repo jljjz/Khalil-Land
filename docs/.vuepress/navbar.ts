@@ -8,6 +8,6 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export default defineNavbarConfig([
 
-  { text: '游玩', link: '/服务器信息/' },
+  { text: '指南', link: '/guide/' },
 
 ])
