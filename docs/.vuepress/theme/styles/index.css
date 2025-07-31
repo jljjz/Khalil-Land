@@ -27,14 +27,14 @@ html {
 /* --- 特定组件字体配置 --- */
 
 /* 代码块字体 */
-.vp-doc div[class*="language-"] pre, 
+.vp-doc div[class*="language-"] pre,
 .vp-doc div[class*="language-"] code {
     font-weight: 350;
     font-variant-ligatures: normal;
 }
 
 /* 引用块 */
-.vp-doc blockquote > p:not(.katex) {
+.vp-doc blockquote>p:not(.katex) {
     font-size: 1em;
 }
 
@@ -106,9 +106,11 @@ html {
     .tk-comment {
         font-size: 0.875rem !important;
     }
+
     .tk-nick {
         font-size: 0.875rem !important;
     }
+
     .tk-tag {
         font-size: 0.75rem;
     }
