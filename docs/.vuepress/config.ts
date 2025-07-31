@@ -23,6 +23,7 @@ export default defineUserConfig({
     // 配置站点图标
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
+    ['script', { defer: true, src: 'https://cloud.umami.is/script.js', 'data-website-id': 'f9647188-5fab-454d-9972-f3e318961724' }],
   ],
 
   bundler: viteBundler(),
@@ -43,7 +44,7 @@ export default defineUserConfig({
     // contributors: true,
     contributors: {
       mode: 'block',
-    },      
+    },
     changelog: true,
 
     /**
