@@ -19,7 +19,7 @@ config:
       text: 在这里，你可以与朋友们一起，从零开始，建造属于你们的家园与回忆。
       # 动作按钮
       actions:
-        - text: 加入游戏
+        - text: 加入游戏 🥵
           link: /guide/ # 请将此链接替换为您的加入指南页面
           theme: brand
         - text: 玩家交流群

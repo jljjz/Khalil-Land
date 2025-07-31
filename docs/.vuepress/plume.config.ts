@@ -42,7 +42,7 @@ export default defineThemeConfig({
 
   /* 站点页脚 */
   footer: {
-    message: 'Copyright © 2025-present <a target="_blank" href="https://space.bilibili.com/517481506?spm_id_from=333.1007.0.0"><b>Ziphyrien</b></a>,All Rights Reserved.',
+    message: 'Copyright © 2025-present <a target="_blank" href="https://space.bilibili.com/517481506?spm_id_from=333.1007.0.0"><b>Ziphyrien</b></a>, All Rights Reserved.',
     copyright: 'CC BY-NC-SA 4.0',
   },
 
