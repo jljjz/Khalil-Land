@@ -20,7 +20,7 @@ config:
       # 动作按钮
       actions:
         - text: 加入游戏 🥵
-          link: /guide/ # 请将此链接替换为您的加入指南页面
+          link: /readme/join/ # 请将此链接替换为您的加入指南页面
           theme: brand
         - text: 玩家交流群
           link: https://qm.qq.com/q/h8w9EjixS8 # 请将此链接替换为您的社区/论坛/Discord链接

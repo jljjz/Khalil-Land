@@ -21,14 +21,14 @@
  */
 import { defineNoteConfig, defineNotesConfig } from 'vuepress-theme-plume'
 
-const guide = defineNoteConfig({
-  dir: 'guide',
+const readme = defineNoteConfig({
+  dir: 'readme',
   // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `link` 配置作为前缀
   // 如果 前缀不一致，则无法生成侧边栏。
   // 所以请确保  markdown 文件的 permalink 都以 `link` 开头
-  link: '/guide',
+  link: '/readme',
   // 手动配置侧边栏结构
-  sidebar: ['rules'],
+  sidebar: ['servername', 'join', 'rules'],
   // 根据文件结构自动生成侧边栏
   // sidebar: 'auto',
 })
@@ -41,5 +41,5 @@ const guide = defineNoteConfig({
 export default defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [guide],
+  notes: [readme],
 })

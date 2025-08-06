@@ -1,7 +1,7 @@
 ---
-title: 规则
+title: 游戏规则
 createTime: 2025/08/01 16:47:26
-permalink: /guide/rules/
+permalink: /readme/rules/
 ---
 
 欢迎来到我们的服务器！
