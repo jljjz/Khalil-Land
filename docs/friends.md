@@ -9,5 +9,5 @@ list:
     name: BugCraft
     link: https://b2t.xin/
     avatar: https://b2t.xin/upload/favicon.svg
-    desc: There are many bugs to play.一个简单的 Minecraft 服务器。
+    desc: There are many bugs to play. 一个简单的 Minecraft 服务器。
 ---
