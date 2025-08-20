@@ -115,34 +115,24 @@ html {
         font-size: 0.75rem;
     }
 }
-/* 覆盖主页 Banner 的主标题 */
+/* 主页 Banner 主标题 */
 .vp-home-banner .content h2.hero-name,
 .vp-home-banner .content .hero-name {
-  /* 流体字号：随屏宽变化，封顶不超过桌面默认的 72px */
-  font-size: clamp(24px, 7.5vw, 72px) !important;
-  line-height: 1.1;
+  /* 在手机上更大：常见 390px 宽时约 45px 左右 */
+  font-size: clamp(32px, 10.8vw, 72px) !important;
+  line-height: 1.12;
   letter-spacing: 0.015em;
 
-  /* 纠正全局的 break-word，避免中英文混排时在任意位置断开 */
+  /* 修正全局 break-word 导致的“随处断行” */
   overflow-wrap: normal !important;
   word-break: keep-all;
-  text-wrap: balance;           /* 现代浏览器更匀称的换行 */
+  text-wrap: balance;
 }
 
-/* 进一步收紧移动端，避免两行撑太高 */
-@media (max-width: 768px) {
+/* 小屏专门优化（<=480px 再给一点上限，避免过小） */
+@media (max-width: 480px) {
   .vp-home-banner .content h2.hero-name,
   .vp-home-banner .content .hero-name {
-    font-size: clamp(22px, 6.2vw, 40px) !important;
-    letter-spacing: 0.01em;
+    font-size: clamp(34px, 12vw, 56px) !important;
   }
-}
-
-/* 老浏览器兜底：不支持 text-wrap: balance 时，仍保持不随意断词 */
-@supports not (text-wrap: balance) {
-  .vp-home-banner .content h2.hero-name,
-  .vp-home-banner .content .hero-name {
-    /* 仍以 keep-all 为主，必要时由浏览器自行回退 */
-    word-break: keep-all;
-  }
-}
+    }
