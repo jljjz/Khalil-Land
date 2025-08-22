@@ -18,18 +18,10 @@ permalink: /readme/join/
 
 ## 服务器信息
 
-:::details 技术规格与版本信息
-<ul>
-  <li>
-    <strong>服务器名称：</strong> <code>Khalil Land 知己屿</code>
-  </li>
-  <li>
-    <strong>当前版本：</strong> <Badge text="1.21.8" type="tip" /> (版本会随社区发展而更新)
-  </li>
-  <li>
-    <strong>推荐客户端版本：</strong> <code>1.21</code> 至 <strong>最新版本</strong>
-  </li>
-</ul>
+:::tip 服务器详情
+*   **服务器名称：** `Khalil Land 知己屿`
+*   **当前版本：** <Badge text="1.21.8" type="info" /> (此版本会不定期更新)
+*   **推荐客户端：** `1.21` 至 **最新版本**
 :::
 
 ## 加入方式
@@ -41,7 +33,7 @@ permalink: /readme/join/
 
 <a href="https://qm.qq.com/q/h8w9EjixS8" target="_blank" rel="noopener noreferrer" class="vp-button">
   <span class="icon" />
-  <span>点击此处，通过链接加入QQ群</span>
+  <span>点此加入QQ群</span>
 </a>
 
 @tab 手动搜索群号
