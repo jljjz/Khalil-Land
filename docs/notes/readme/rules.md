@@ -2,6 +2,7 @@
 title: 游戏规则
 createTime: 2025/08/01 16:47:26
 permalink: /readme/rules/
+icon: material-symbols:gavel
 ---
 
 欢迎来到我们的服务器！

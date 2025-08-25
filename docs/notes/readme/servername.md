@@ -2,6 +2,7 @@
 title: 关于名字
 createTime: 2025/07/30 19:54:11
 permalink: /readme/servername/
+icon: material-symbols:info-outline
 ---
 
 本服最初名为 **Zephyr Craft** (和风Craft)。然而，一个令人心碎的消息，让我们决定用一个更沉重的名字，来纪念一位才华横溢的音乐人。
