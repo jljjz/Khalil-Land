@@ -1,17 +1,23 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
 version: 2
 updates:
-  # 启用 npm 的版本更新检查
-  - package-ecosystem: "npm"
-    #  package.json 所在的目录
+  - package-ecosystem: "pnpm"
     directory: "/"
-    # 检查更新的频率
     schedule:
-      interval: "daily" # 每天检查一次
-    # 给 Dependabot 创建的 PR 自动打上标签
+      interval: "daily"           # 仍然每天检查
+      time: "02:00"               # 选一个业务低峰期
+      timezone: "Asia/Shanghai"
     labels:
       - "dependencies"
+    commit-message:
+      prefix: "deps"              # 便于过滤
+    target-branch: "main"         # 默认 main，可按需调整
+    versioning-strategy: "auto"   # 默认策略；若只想自动合并补丁/小版本，可改为 "widen" 等
+    allow:
+      - dependency-type: "direct" # 只更新直接依赖；若希望包含间接依赖，可去掉这一段
+    reopen-pull-requests: true    # 尝试重开之前被关闭的 PR
+    open-pull-requests-limit: 5   # 避免同时过多 PR
+    groups:                       # 根据实际情况组合依赖，减少 PR 数量（可选）
+      prod-deps:
+        dependency-type: "direct"
+        patterns:
+          - "*"
