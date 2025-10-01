@@ -1,28 +1,18 @@
-version: 2
+# .github/dependabot.yml
 
+version: 2
 updates:
-  - package-ecosystem: "npm"            # 对 pnpm 也是用 npm 生态
-    directory: "/"                      # package.json / pnpm-lock.yaml 所在目录
+  # 为 pnpm 启用版本更新检查
+  - package-ecosystem: "pnpm" # <-- 这里是关键，从 "npm" 改为 "pnpm"
+    # pnpm-lock.yaml 和 package.json 所在的目录
+    directory: "/"
+    # 检查更新的频率
     schedule:
-      interval: "daily"
-      time: "02:00"
-      timezone: "Asia/Shanghai"
+      interval: "daily" # 每天检查一次
+    # 给 Dependabot 创建的 PR 自动打上标签
     labels:
       - "dependencies"
-    commit-message:
-      prefix: "deps"
-    target-branch: "main"
-    versioning-strategy: "increase"     # 仅自动提升到满足 semver 的更高版本，可按需调成 "auto" / "widen"
-    allow:
-      - dependency-type: "direct"       # 如需开发依赖或传递依赖也更新，可调整
-    open-pull-requests-limit: 5
-    groups:
-      pnpm-direct-deps:
-        dependency-type: "direct"
-        patterns:
-          - "*"
-    # 可选：指定使用 pnpm-lock.yaml
-    registries:                         # 如果用私服，可在 workflows/Dependabot registries 配置
-      - type: npm-registry
-        url: https://registry.npmjs.org/
-    # 注意：Dependabot 会自动检测 pnpm-lock.yaml；若仓库还有 package-lock或 yarn-lock，要删除避免冲突
+
+    # (可选) 如果你想对某些更新采用更激进的自动合并策略，可以添加如下配置。
+    # 例如，对于开发依赖 (devDependencies)，可以允许 major 版本的更新。
+    # 对于大多数项目，简单配置就足够了，主要依靠 GitHub 的设置。
