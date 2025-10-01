@@ -1,23 +1,28 @@
 version: 2
+
 updates:
-  - package-ecosystem: "pnpm"
-    directory: "/"
+  - package-ecosystem: "npm"            # 对 pnpm 也是用 npm 生态
+    directory: "/"                      # package.json / pnpm-lock.yaml 所在目录
     schedule:
-      interval: "daily"           # 仍然每天检查
-      time: "02:00"               # 选一个业务低峰期
+      interval: "daily"
+      time: "02:00"
       timezone: "Asia/Shanghai"
     labels:
       - "dependencies"
     commit-message:
-      prefix: "deps"              # 便于过滤
-    target-branch: "main"         # 默认 main，可按需调整
-    versioning-strategy: "auto"   # 默认策略；若只想自动合并补丁/小版本，可改为 "widen" 等
+      prefix: "deps"
+    target-branch: "main"
+    versioning-strategy: "increase"     # 仅自动提升到满足 semver 的更高版本，可按需调成 "auto" / "widen"
     allow:
-      - dependency-type: "direct" # 只更新直接依赖；若希望包含间接依赖，可去掉这一段
-    reopen-pull-requests: true    # 尝试重开之前被关闭的 PR
-    open-pull-requests-limit: 5   # 避免同时过多 PR
-    groups:                       # 根据实际情况组合依赖，减少 PR 数量（可选）
-      prod-deps:
+      - dependency-type: "direct"       # 如需开发依赖或传递依赖也更新，可调整
+    open-pull-requests-limit: 5
+    groups:
+      pnpm-direct-deps:
         dependency-type: "direct"
         patterns:
           - "*"
+    # 可选：指定使用 pnpm-lock.yaml
+    registries:                         # 如果用私服，可在 workflows/Dependabot registries 配置
+      - type: npm-registry
+        url: https://registry.npmjs.org/
+    # 注意：Dependabot 会自动检测 pnpm-lock.yaml；若仓库还有 package-lock或 yarn-lock，要删除避免冲突
