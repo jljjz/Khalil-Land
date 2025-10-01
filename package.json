@@ -21,7 +21,7 @@
     "vuepress-theme-plume": "1.0.0-rc.161",
     "http-server": "^14.1.1",
     "vue": "^3.5.22",
-    "typescript": "^5.9.2",
+    "typescript": "^5.9.3",
     "@vuepress/plugin-google-analytics": "2.0.0-rc.112"
   }
 }
