@@ -16,7 +16,7 @@
     "vp-update": "npx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.24",
+    "@vuepress/bundler-vite": "2.0.0-rc.25",
     "vuepress": "2.0.0-rc.25",
     "vuepress-theme-plume": "1.0.0-rc.164",
     "http-server": "^14.1.1",
