@@ -8,11 +8,10 @@ createTime: 2025/10/02 17:24:58
 ## ::mdi:play-box-outline:: 效果演示
 
 导航时的粒子效果：
-![1756470220397.png](https://free.picui.cn/free/2025/08/29/68b19dcf4573e.png)
-![1756470179981.png](https://free.picui.cn/free/2025/08/29/68b19dd0beeb5.png)
+![导航粒子](/pathfinder_eg.png)
 
 导航菜单界面（使用 `/toc cd` 打开）：
-![1756470687812.png](https://free.picui.cn/free/2025/08/29/68b19ddba00d2.png)
+![导航菜单](/pathfinder_menu.png)
 
 ## ::mdi:console-line:: 玩家常用指令
 
