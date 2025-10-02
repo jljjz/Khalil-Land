@@ -115,3 +115,24 @@ html {
         font-size: 0.75rem;
     }
 }
+/* 主页 Banner 主标题 */
+.vp-home-banner .content h2.hero-name,
+.vp-home-banner .content .hero-name {
+  /* 在手机上更大：常见 390px 宽时约 45px 左右 */
+  font-size: clamp(32px, 10.8vw, 72px) !important;
+  line-height: 1.12;
+  letter-spacing: 0.015em;
+
+  /* 修正全局 break-word 导致的“随处断行” */
+  overflow-wrap: normal !important;
+  word-break: keep-all;
+  text-wrap: balance;
+}
+
+/* 小屏专门优化（<=480px 再给一点上限，避免过小） */
+@media (max-width: 480px) {
+  .vp-home-banner .content h2.hero-name,
+  .vp-home-banner .content .hero-name {
+    font-size: clamp(34px, 12vw, 56px) !important;
+  }
+    }

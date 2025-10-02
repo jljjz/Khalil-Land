@@ -2,9 +2,10 @@
 title: 关于名字
 createTime: 2025/07/30 19:54:11
 permalink: /readme/servername/
+icon: material-symbols:info-outline
 ---
 
-本服最初名为 **Zephyr Craft** (和风Craft)，这个名字由AI根据服主 **Ziphyrien** 的昵称生成。然而，一个令人心碎的消息，让我们决定用一个更沉重的名字，来纪念一位才华横溢的音乐人。
+本服最初名为 **ZephyrCraft** 。然而，一个令人心碎的消息，让我们决定用一个更沉重的名字，来纪念一位才华横溢的音乐人。
 
 
 ![赋音乐 (FUMUSIC)在微博发布的公告](/FUMUSIC_weibo.png)

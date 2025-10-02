@@ -12,7 +12,7 @@ config:
       dark: 0.5
     hero:
       # 服务器主标题
-      name: Khalil Land 知己屿
+      name: "Khalil\u00A0Land\u2009知己屿"
       # 服务器副标题/标语
       tagline: 纯净、自由、温馨的 Minecraft Java 版服务器
       # 简短介绍

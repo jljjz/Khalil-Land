@@ -12,6 +12,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 export default defineUserConfig({
   base: '/',
@@ -24,11 +25,25 @@ export default defineUserConfig({
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
     ['script', { defer: true, src: 'https://cloud.umami.is/script.js', 'data-website-id': 'f9647188-5fab-454d-9972-f3e318961724' }],
+    // Microsoft Clarity
+    ['script', {}, `
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "sy1dl8ug1u");
+    `],
   ],
 
   bundler: viteBundler(),
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
+  plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-RTZ56ELZCZ', 
+    }),
+  ],
+  
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
     hostname: 'https://wiki.zipawa.top',
