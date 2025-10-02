@@ -40,7 +40,7 @@ const features = defineNoteConfig({
   // 所以请确保  markdown 文件的 permalink 都以 `link` 开头
   link: '/features',
   // 手动配置侧边栏结构
-  sidebar: []
+  sidebar: ['menu',"pathfinder"]
   // 根据文件结构自动生成侧边栏
   // sidebar: 'auto',
 })
