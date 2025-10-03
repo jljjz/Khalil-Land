@@ -34,7 +34,7 @@ icon: material-symbols:menu
   - animatedscoreboard（计分板）
   - autoviaupdater（Via自动更新）
 - ### 有趣小物件
-  - 导航
+  - [导航](./pathfinder.md)
   - 罗森物语
   - gsit（椅子）
   - jobs（职业）
